@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroNutri - Nutrição e Manejo de Bovinos</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>AgroNutri 🌾</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#nutricao">Nutrição</a></li>
+                    <li><a href="#calculadora">Calculadora</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero" id="inicio">
+        <h2>Alta Produtividade na Alimentação de Bovinos</h2>
+        <p>Maximize o ganho de peso e a produção do seu rebanho com estratégias de precisão.</p>
+        <a href="#calculadora" class="btn">Calcular Consumo</a>
+    </section>
+
+    <!-- Pilares da Nutrição -->
+    <section class="container" id="nutricao">
+        <h2 class="section-title">Pilares da Alimentação Bovina</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Volumosos de Qualidade</h3>
+                <p>A base do trato. O uso de pastagens manejadas, silagem de milho e feno garante a fibra necessária para o bom funcionamento do rúmen.</p>
+            </div>
+            <div class="card">
+                <h3>2. Concentrados de Precisão</h3>
+                <p>Grãos como milho e farelo de soja fornecem o aporte extra de energia e proteína para ganho de peso rápido ou lactação.</p>
+            </div>
+            <div class="card">
+                <h3>3. Suplementação Mineral</h3>
+                <p>O suprimento correto de macro e microminerais evita distúrbios metabólicos e potencializa os índices de fertilidade do lote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da Calculadora Nutricional -->
+    <section class="calc-section" id="calculadora">
+        <div class="calc-container">
+            <h2>Calculadora de Consumo Diário (Matéria Seca)</h2>
+            <p>Estime o consumo diário de alimento do seu lote com base no peso vivo médio (estimativa de 2,3% do PV).</p>
+            
+            <form id="form-nutricao">
+                <div class="input-group">
+                    <label for="peso">Peso Vivo Médio do Animal (kg):</label>
+                    <input type="number" id="peso" placeholder="Ex: 450" required min="100">
+                </div>
+                <div class="input-group">
+                    <label for="quantidade">Quantidade de Animais no Lote:</label>
+                    <input type="number" id="quantidade" placeholder="Ex: 50" required min="1">
+                </div>
+                <button type="submit" class="btn-calc">Calcular Demanda</button>
+            </form>
+
+            <div id="resultado" class="resultado hidden">
+                <h3>Resultado do Lote:</h3>
+                <p>Cada animal consumirá aprox: <strong id="res-animal">0</strong> kg de MS/dia.</p>
+                <p>Total de Matéria Seca para o lote: <strong id="res-total">0</strong> kg/dia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2026 AgroNutri - Soluções em Agropecuária. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Vinculação do arquivo JavaScript externo -->
+    <script href="js/script.js"></script>
+</body>
+</html>
