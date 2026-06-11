@@ -1,0 +1,234 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Menu */
+header {
+    background-color: #1b4332;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #52b788;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #52b788;
+}
+
+/* Banner Hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #74c69d;
+    color: #1b4332;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #52b788;
+}
+
+/* Container de Informações */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1b4332;
+    font-size: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 5px solid #2d6a4f;
+}
+
+.card h3 {
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+}
+
+/* Área da Calculadora */
+.calc-section {
+    background-color: #d8f3dc;
+    padding: 4rem 2rem;
+}
+
+.calc-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.calc-container h2 {
+    color: #1b4332;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.calc-container p {
+    margin-bottom: 2rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2d6a4f;
+}
+
+.input-group input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-calc {
+    width: 100%;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-calc:hover {
+    background-color: #1b4332;
+}
+
+/* Resultados da Calculadora */
+.resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #e9f5ed;
+    border-left: 5px solid #52b788;
+    border-radius: 0 5px 5px 0;
+}
+
+.resultado h3 {
+    color: #1b4332;
+    margin-bottom: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0 1rem;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
